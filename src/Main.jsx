@@ -5,6 +5,10 @@ import Fruits from "./Fruits";
 export default function Main() {
   const [counter, setCounter] = useState(0);
 
+  const [inputText, setInputText] = useState("");
+
+  // console.log("mambo", counter);
+
   return (
     <Container>
       <Row className="my-5">
@@ -20,6 +24,20 @@ export default function Main() {
           >
             Add counter
           </Button>
+        </Col>
+
+        <Col xs={12} className="d-flex justify-content-center">
+          <Col xs={6} className="my-5 d-flex justify-content-center">
+            <input
+              className="form-control w-100"
+              type="text"
+              value={inputText}
+              onChange={(event) => {
+                // console.log(event.target.value);
+                setInputText(event.target.value);
+              }}
+            />
+          </Col>
         </Col>
         <Fruits />
       </Row>

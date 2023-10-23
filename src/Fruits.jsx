@@ -26,6 +26,21 @@ export default function Fruits() {
     "🥝",
     "🍅",
   ];
+
+  // un po' come se scrivessimo qualcosa come:
+
+  // const container = document.createElement("div")
+  // container.classList.add("container")
+  // const row = document.createElement("div")
+  // row.classList.add("row")
+  // container.appendChild(row)
+  // const col = document.createElement("div")
+  // col.classList.add("col")
+
+  // ecc ecc ecc ecc ecc
+
+  // console.log("Macarena");
+
   return (
     <Container>
       <h1>Fruits</h1>
